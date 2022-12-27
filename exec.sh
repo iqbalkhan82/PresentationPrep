@@ -1,5 +1,5 @@
 #!/bin/bash
-dnf install docker
+dnf install docker -y
 wget https://raw.githubusercontent.com/iqbalkhan82/PresentationPrep/main/Dockerfile
 docker build -t prep:latest .
 docker run -d --name PrepTest -p 80:80 localhost/prep
